@@ -20,6 +20,7 @@
 		51847BB22434937F00547EBD /* Montserrat-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 51847BAB2434936F00547EBD /* Montserrat-Thin.ttf */; };
 		51847BB624349D1D00547EBD /* CustomView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51847BB524349D1D00547EBD /* CustomView.storyboard */; };
 		51847BB82434A4EA00547EBD /* PopUpActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51847BB72434A4EA00547EBD /* PopUpActionViewController.swift */; };
+		51847BBB2434D5B200547EBD /* Medium_screens.png in Resources */ = {isa = PBXBuildFile; fileRef = 51847BBA2434D5B200547EBD /* Medium_screens.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		51847BAD2434936F00547EBD /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		51847BB524349D1D00547EBD /* CustomView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomView.storyboard; sourceTree = "<group>"; };
 		51847BB72434A4EA00547EBD /* PopUpActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpActionViewController.swift; sourceTree = "<group>"; };
+		51847BBA2434D5B200547EBD /* Medium_screens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Medium_screens.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				51847B8C2434869400547EBD /* CustomDialogBox */,
+				51847BB92434D59B00547EBD /* Assets */,
 				51847BA82434936400547EBD /* Montserrat */,
 				51847B8B2434869400547EBD /* Products */,
 			);
@@ -102,6 +105,14 @@
 				51847BAB2434936F00547EBD /* Montserrat-Thin.ttf */,
 			);
 			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		51847BB92434D59B00547EBD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				51847BBA2434D5B200547EBD /* Medium_screens.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +173,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51847BBB2434D5B200547EBD /* Medium_screens.png in Resources */,
 				51847BB12434937B00547EBD /* Montserrat-Regular.ttf in Resources */,
 				51847BB22434937F00547EBD /* Montserrat-Thin.ttf in Resources */,
 				51847BAE2434937200547EBD /* Montserrat-Bold.ttf in Resources */,
