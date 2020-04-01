@@ -9,7 +9,8 @@ The existing UIAlertViewController which Apple provides is not customizable, and
 
 
 ## Technology used
-Swift and Xcode
+* Swift
+* Xcode
 
 ## How to use ?
 1. Download or clone the repository.
