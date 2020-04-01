@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Normal Popup View Controller-->
+        <scene sceneID="TlR-EU-Ocp">
+            <objects>
+                <viewController storyboardIdentifier="NormalPopupViewController" id="ihQ-hS-wVt" customClass="NormalPopupViewController" customModule="CustomDialogBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k4a-7o-oEs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oup-GP-W8e">
+                                <rect key="frame" x="24" y="295.5" width="366" height="235"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Update Available!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUg-fM-OHP">
+                                        <rect key="frame" x="20" y="18" width="223" height="26"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsk-CG-fat">
+                                        <rect key="frame" x="273" y="183" width="61" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="La6-LQ-roE"/>
+                                            <constraint firstAttribute="width" constant="61" id="h7c-FC-rfI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="Okay">
+                                            <color key="titleColor" name="primaryBackground"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okayButtonPressed:" destination="ihQ-hS-wVt" eventType="touchUpInside" id="VOB-u3-fXZ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8r-Fh-D0D">
+                                        <rect key="frame" x="20" y="68" width="322" height="75"/>
+                                        <string key="text">A new update is available in the App Store. It is recommended that you update the application to make use of all the latest features. </string>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" name="primaryBackground"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="mgM-cM-H9M">
+                                        <rect key="frame" x="300" y="8" width="42" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="Jja-bB-huQ"/>
+                                            <constraint firstAttribute="width" constant="42" id="JyK-nS-86V"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="f8r-Fh-D0D" secondAttribute="trailing" constant="24" id="0CL-dF-YEE"/>
+                                    <constraint firstItem="f8r-Fh-D0D" firstAttribute="top" secondItem="oUg-fM-OHP" secondAttribute="bottom" constant="24" id="8CC-cC-nYG"/>
+                                    <constraint firstAttribute="trailing" secondItem="mgM-cM-H9M" secondAttribute="trailing" constant="24" id="8h0-CZ-uhw"/>
+                                    <constraint firstItem="mgM-cM-H9M" firstAttribute="top" secondItem="Oup-GP-W8e" secondAttribute="top" constant="8" id="M3L-MM-f3U"/>
+                                    <constraint firstItem="oUg-fM-OHP" firstAttribute="leading" secondItem="Oup-GP-W8e" secondAttribute="leading" constant="20" id="PU0-AO-SWQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Fsk-CG-fat" secondAttribute="bottom" constant="14" id="RRN-N7-Jhn"/>
+                                    <constraint firstItem="f8r-Fh-D0D" firstAttribute="leading" secondItem="Oup-GP-W8e" secondAttribute="leading" constant="20" id="cbl-RX-rzj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Fsk-CG-fat" secondAttribute="trailing" constant="32" id="kjn-VH-m5i"/>
+                                    <constraint firstAttribute="height" constant="235" id="p1f-xS-WcX"/>
+                                    <constraint firstItem="oUg-fM-OHP" firstAttribute="top" secondItem="Oup-GP-W8e" secondAttribute="top" constant="18" id="vQk-y7-9SD"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Oup-GP-W8e" firstAttribute="centerY" secondItem="k4a-7o-oEs" secondAttribute="centerY" constant="-35" id="etS-tw-n9E"/>
+                            <constraint firstItem="ouw-91-Dx0" firstAttribute="trailing" secondItem="Oup-GP-W8e" secondAttribute="trailing" constant="24" id="oiW-jC-pBI"/>
+                            <constraint firstItem="Oup-GP-W8e" firstAttribute="leading" secondItem="ouw-91-Dx0" secondAttribute="leading" constant="24" id="ug0-7j-UzU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ouw-91-Dx0"/>
+                    </view>
+                    <connections>
+                        <outlet property="dialogBoxView" destination="Oup-GP-W8e" id="Vxz-xm-QH4"/>
+                        <outlet property="okayButton" destination="Fsk-CG-fat" id="W8j-sp-zDB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43C-a7-2P3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100.00000000000001" y="65.625"/>
+        </scene>
+        <!--Pop Up Action View Controller-->
+        <scene sceneID="gJE-b7-jMH">
+            <objects>
+                <viewController storyboardIdentifier="PopUpActionViewController" id="45i-iT-jLv" customClass="PopUpActionViewController" customModule="CustomDialogBox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j75-hx-6g8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TwI-Tw-Cjm">
+                                <rect key="frame" x="24" y="295.5" width="366" height="235"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Update Available!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5m-WR-hyf">
+                                        <rect key="frame" x="20" y="18" width="223" height="26"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flashIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fop-26-4NY">
+                                        <rect key="frame" x="300" y="8" width="42" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="8hw-f2-hgY"/>
+                                            <constraint firstAttribute="width" constant="42" id="FaA-1x-0wR"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVB-rm-9eo">
+                                        <rect key="frame" x="20" y="68" width="322" height="75"/>
+                                        <string key="text">A new update is available in the App Store. It is recommended that you update the application to make use of all the latest features. </string>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" name="primaryTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iWm-Gi-anq">
+                                        <rect key="frame" x="35" y="183" width="193" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="193" id="6nR-Pf-RmS"/>
+                                            <constraint firstAttribute="height" constant="38" id="xbf-b0-DLf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="Go to the App Store">
+                                            <color key="titleColor" name="primaryBackground"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goToStorePressed:" destination="45i-iT-jLv" eventType="touchUpInside" id="P1q-30-72j"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BL8-fX-n33">
+                                        <rect key="frame" x="257" y="183" width="57" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="57" id="N5o-N8-gcC"/>
+                                            <constraint firstAttribute="height" constant="38" id="iiH-C5-zT8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="18"/>
+                                        <state key="normal" title="Later">
+                                            <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="laterButtonPressed:" destination="45i-iT-jLv" eventType="touchUpInside" id="gqw-wI-zAH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="iWm-Gi-anq" firstAttribute="leading" secondItem="TwI-Tw-Cjm" secondAttribute="leading" constant="35" id="1ch-9J-PIV"/>
+                                    <constraint firstAttribute="trailing" secondItem="BL8-fX-n33" secondAttribute="trailing" constant="52" id="6Pf-Tr-3Jq"/>
+                                    <constraint firstItem="WVB-rm-9eo" firstAttribute="top" secondItem="H5m-WR-hyf" secondAttribute="bottom" constant="24" id="Ceh-Mz-mJR"/>
+                                    <constraint firstAttribute="height" constant="235" id="FZV-gm-evr"/>
+                                    <constraint firstItem="H5m-WR-hyf" firstAttribute="top" secondItem="TwI-Tw-Cjm" secondAttribute="top" constant="18" id="OH0-QT-JT6"/>
+                                    <constraint firstItem="fop-26-4NY" firstAttribute="top" secondItem="TwI-Tw-Cjm" secondAttribute="top" constant="8" id="Qpz-dA-FNe"/>
+                                    <constraint firstAttribute="trailing" secondItem="WVB-rm-9eo" secondAttribute="trailing" constant="24" id="Td1-V9-g7K"/>
+                                    <constraint firstAttribute="bottom" secondItem="iWm-Gi-anq" secondAttribute="bottom" constant="14" id="UmJ-sy-Ofq"/>
+                                    <constraint firstItem="H5m-WR-hyf" firstAttribute="leading" secondItem="TwI-Tw-Cjm" secondAttribute="leading" constant="20" id="i8i-CC-iUb"/>
+                                    <constraint firstAttribute="bottom" secondItem="BL8-fX-n33" secondAttribute="bottom" constant="14" id="n3G-6W-mSf"/>
+                                    <constraint firstItem="WVB-rm-9eo" firstAttribute="leading" secondItem="TwI-Tw-Cjm" secondAttribute="leading" constant="20" id="no7-UV-mgr"/>
+                                    <constraint firstAttribute="trailing" secondItem="fop-26-4NY" secondAttribute="trailing" constant="24" id="qfc-Wm-6s5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h1L-Ze-5IB" firstAttribute="trailing" secondItem="TwI-Tw-Cjm" secondAttribute="trailing" constant="24" id="5al-TQ-1xS"/>
+                            <constraint firstItem="TwI-Tw-Cjm" firstAttribute="leading" secondItem="h1L-Ze-5IB" secondAttribute="leading" constant="24" id="HVK-Va-Nmb"/>
+                            <constraint firstItem="TwI-Tw-Cjm" firstAttribute="centerY" secondItem="j75-hx-6g8" secondAttribute="centerY" constant="-35" id="jVi-ue-B2e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h1L-Ze-5IB"/>
+                    </view>
+                    <connections>
+                        <outlet property="dialogBoxView" destination="TwI-Tw-Cjm" id="FUP-1P-Pyi"/>
+                        <outlet property="gotoStoreButton" destination="iWm-Gi-anq" id="hwf-ZK-2vE"/>
+                        <outlet property="laterButton" destination="BL8-fX-n33" id="fgi-r4-Fzc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4h1-b7-dgN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="727.536231884058" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flashIcon" width="48" height="48"/>
+        <namedColor name="primaryBackground">
+            <color red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryTextColor">
+            <color red="0.13725490196078433" green="0.13725490196078433" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
