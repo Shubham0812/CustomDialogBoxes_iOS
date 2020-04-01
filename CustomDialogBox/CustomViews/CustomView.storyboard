@@ -157,7 +157,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="iWm-Gi-anq" firstAttribute="leading" secondItem="TwI-Tw-Cjm" secondAttribute="leading" constant="35" id="1ch-9J-PIV"/>
                                     <constraint firstAttribute="trailing" secondItem="BL8-fX-n33" secondAttribute="trailing" constant="52" id="6Pf-Tr-3Jq"/>
@@ -190,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4h1-b7-dgN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="727.536231884058" y="65.625"/>
+            <point key="canvasLocation" x="1848" y="66"/>
         </scene>
     </scenes>
     <resources>
